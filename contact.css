@@ -1,0 +1,87 @@
+#contact-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/pexels-gabriela-palai-395198.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25vh 15vh;
+}
+
+.contact-form-box {
+    padding: 32px 50px;
+    width: 450px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 20px;
+}
+
+.subbtitle-contact-form {
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    max-height: 54px;
+    padding: 19px 39px;
+    margin-bottom: 20px;
+    background-color: #ECECEC;
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.contact-form-area {
+    min-height: 200px;
+    background-color: #ECECEC;
+    border: none;
+    width: 100%;
+    padding: 23px 20px;
+    margin-bottom: 45px;
+    border-radius: 20px;
+}
+
+textarea {
+    resize: vertical;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.contact-map-box {
+    border: 1px solid blue;
+    background-color: whitesmoke;
+    width: 650px;
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 20px;
+}
+
+.container-map {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.map {
+    filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+.info-details-location {
+    display: flex;
+}
+
+.text-info-details {
+    min-width: 200px;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubic Dirt', cursive;
+}

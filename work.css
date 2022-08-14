@@ -1,0 +1,60 @@
+.work-title {
+    padding: 150px 0 40px 0;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+.work-description-gallery {
+    display: flex;
+    margin: 0 70px 0 70px;
+    justify-content: space-between;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.work-description-gallery>div {
+    margin: 25px 30px 0 0;
+}
+
+.work-description {
+    width: 20%;
+    height: auto;
+}
+
+.telegram-icon {
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.gallery {
+    --n: 3;
+    --m: 4;
+    --h: 230px;
+    --w: 300px;
+    --g: 20px;
+    --f: 1.2;
+
+    display: grid;
+    gap: var(--g);
+    width: calc(var(--m)*var(--w) + (var(--m)-1)*var(--g));
+    height: calc(var(--n)*var(--h) + (var(--n)-1)*var(--g));
+    grid-template-columns: repeat(var(--m), auto);
+}
+
+.gallery>img {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    filter: grayscale(80%);
+    transition: .35s linear;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 6px 9px, rgba(0, 0, 0, 0.23) 0px 6px 9px;
+}
+
+.gallery img:hover {
+    width: calc(var(--w) * var(--f));
+    height: calc(var(--h)*var(--f));
+    filter: none;
+}

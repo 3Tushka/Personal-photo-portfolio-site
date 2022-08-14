@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/header-photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0 150px;
+    padding: 5px 10%;
+    background-color: white;
+    border-radius: 0 0 60px 60px;
+    border: 2px solid lightgrey;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: large;
+    color: black;
+}
+
+nav>ul>li>a:hover {
+    color: blue;
+    transition: .2s;
+}
+
+.logo>img {
+    width: auto;
+    height: 70px;
+    margin: 0 10px;
+}
+
+.header-main {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    padding: 250px;
+}
+
+.header-main-text {
+    color: whitesmoke;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 75px;
+}
+
+.header-about-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 105px;
+}
+
+.header-about-container>div {
+    color: whitesmoke;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 20px;
+}

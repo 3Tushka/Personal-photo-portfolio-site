@@ -1,0 +1,51 @@
+footer {
+    width: 100%;
+    display: inline-block;
+    margin: 2em 0;
+    height: 80px;
+}
+
+.copyright {
+    width: 50%;
+    float: left;
+}
+
+.copyright>p {
+    padding-left: 10%;
+    color: whitesmoke;
+    font-size: 0.7em;
+    line-height: 70px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.social {
+    width: 50%;
+    float: right;
+
+}
+
+a {
+    float: left;
+    line-height: 70px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #222;
+    transition: 0.3s;
+}
+
+@media (max-width:600px) {
+    .copyright {
+        width: 100%;
+    }
+
+    p {
+        text-align: center;
+        padding: auto;
+    }
+}

@@ -1,0 +1,39 @@
+#about-container {
+    margin: 20px 0 0 0;
+    padding: 50px 70px;
+    width: 100%;
+    height: 60vh;
+    font-family: 'Rubik Dirt', cursive;
+    background-color: #2e2c2c;
+    color: whitesmoke;
+}
+
+.header-about {
+    font-size: 30px;
+}
+
+.about-experience {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 50px;
+}
+
+.about-experience>div {
+    width: 200px;
+    height: fit-content;
+    text-align: center;
+    border-radius: 24px;
+    background-color: whitesmoke;
+    color: #2e2c2c;
+    box-shadow: #575252 0px 6px 9px;
+}
+
+.about-experience>div:hover {
+    width: 450px;
+    box-shadow: rgba(252, 38, 38) 0px 4px 16px, rgba(252, 38, 38) 0px 8px 24px, rgba(252, 38, 38) 0px 16px 56px;
+    transition: 0.35s;
+}
+
+.about-text {
+    margin: 5px;
+}
