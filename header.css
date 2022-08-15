@@ -19,10 +19,9 @@ html {
 }
 
 .container {
+    width: 80%;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 1;
     margin: 0 150px;
     padding: 5px 10%;
@@ -76,8 +75,11 @@ nav>ul>li>a:hover {
     font-size: 75px;
 }
 
-.header-about-container {
+.header-main {
     display: flex;
+}
+
+.header-about-container {
     justify-content: space-between;
     margin: 0 105px;
 }
@@ -86,4 +88,31 @@ nav>ul>li>a:hover {
     color: whitesmoke;
     font-family: 'Rubik Dirt', cursive;
     font-size: 20px;
+}
+
+@media (max-width:786px) {
+
+    .container {
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+
+    nav {
+        display: inline-flex;
+    }
+
+    .header-main {
+        width: 100vw;
+        padding: 0;
+    }
+
+    .header-main-text {
+        padding: 250px 0;
+        color: #2c2c2c;
+        font-size: 55px;
+    }
 }
